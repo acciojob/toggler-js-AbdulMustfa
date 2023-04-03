@@ -1,1 +1,53 @@
 /*  your css code here. If applicable */
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle-label span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  color: white;
+}
+
+#g1.toggle-checkbox:checked + .toggle-label {
+  background-color: #4CAF50;
+}
+
+#g2.toggle-checkbox:checked + .toggle-label {
+  background-color: #f44336;
+}
+
+#g3.toggle-checkbox:checked + .toggle-label {
+  background-color: #2196F3;
+}
